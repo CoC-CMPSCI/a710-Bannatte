@@ -21,11 +21,21 @@ void bubblesort(vector<int> &);
 void bubble(vector<int> &number)
 {
     // TODO: one bubble-sort pass — compare adjacent values and swap if left > right.
+    for (int i = 0; i < number.size() - 1; i++) {
+        if (number[i] > number[i + 1]) {
+            swap(number[i], number[i + 1]);
+        }
+    }
 }
 
 void bubblesort(vector<int> &number)
 {
     // TODO: call bubble() N-1 times to fully sort the vector (ascending).
+    int N = number.size();
+
+    for (int i = 0: i < N - 1; i++) {
+        bubble(number);
+    }
 }
 
 void makeVector(vector<int> &number, int N)
