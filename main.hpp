@@ -31,9 +31,7 @@ void bubble(vector<int> &number)
 void bubblesort(vector<int> &number)
 {
     // TODO: call bubble() N-1 times to fully sort the vector (ascending).
-    int N = number.size();
-
-    for (int i = 0: i < N - 1; i++) {
+    for (int i = 0; i < number.size() - 1; i++) {
         bubble(number);
     }
 }
